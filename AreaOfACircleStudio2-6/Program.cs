@@ -8,10 +8,12 @@ namespace AreaOfACircleStudio2_6
         {
             Radius = radius;
             Diameter = radius * 2;
-            Circumference = 2 * Math.PI * Radius;
+            Circumference = 2 * Math.PI * radius;
+            Area = Math.PI * radius * radius;
+
         }
 
-        public double Radius, Diameter, Circumference;
+        public double Radius, Diameter, Circumference, Area;
 
     }
 
@@ -75,7 +77,7 @@ namespace AreaOfACircleStudio2_6
 
                 Circle myCircle = new Circle(radius);
 
-                Console.WriteLine($"The myCircle variable has a diameter of {myCircle.Diameter}, radius of {myCircle.Radius} and circumference of {myCircle.Circumference}");
+                Console.WriteLine($"The myCircle variable has a diameter of {myCircle.Diameter}, radius of {myCircle.Radius}, circumference of {myCircle.Circumference} and area of {myCircle.Area}");
             }
         }
     }
